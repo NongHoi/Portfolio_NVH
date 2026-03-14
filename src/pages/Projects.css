@@ -1,6 +1,18 @@
 .projects-page-container {
   min-height: 100vh;
-  padding: 5rem 1rem;
+  padding: 3rem 1rem;
+}
+
+@media (max-width: 1024px) {
+  .projects-page-container {
+    padding: 2.5rem 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-page-container {
+    padding: 1.5rem 1rem;
+  }
 }
 
 .projects-content {
@@ -9,13 +21,32 @@
 }
 
 .projects-header {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .projects-header {
+    margin-bottom: 1.5rem;
+  }
 }
 
 .projects-title {
   font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+  .projects-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-title {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .projects-description {
@@ -35,17 +66,26 @@
   color: #fff;
 }
 
-.search-input:focus {
-  outline: none;
-  border-color: #7a1811;
-  box-shadow: 0 0 0 2px rgba(94, 6, 6, 0.2);
+@media (max-width: 768px) {
+  .search-input {
+    max-width: 100%;
+    font-size: 0.95rem;
+    padding: 0.65rem 0.85rem;
+  }
 }
 
 .filter-buttons {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .filter-buttons {
+    gap: 0.4rem;
+    margin-bottom: 1.5rem;
+  }
 }
 
 .filter-btn {
@@ -58,6 +98,14 @@
   background-color: #fff;
   color: #050408;
   text-transform: capitalize;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .filter-btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+  }
 }
 
 .filter-btn:hover {
@@ -79,11 +127,13 @@
 @media (min-width: 768px) {
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
   }
 }
 
 @media (min-width: 1024px) {
   .projects-grid {
     grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
   }
 }

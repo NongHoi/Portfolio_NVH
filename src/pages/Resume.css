@@ -5,6 +5,18 @@
   margin: 0 auto;
 }
 
+@media (max-width: 1024px) {
+  .resume-container {
+    padding: 1.75rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .resume-container {
+    padding: 1.5rem 1.5rem;
+  }
+}
+
 /* Animation keyframes */
 @keyframes fadeInDown {
   from {
@@ -58,9 +70,33 @@
   margin-bottom: 3rem;
 }
 
+@media (max-width: 1024px) {
+  .resume-header {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .resume-header {
+    margin-bottom: 1.75rem;
+  }
+}
+
 .resume-header h1 {
   font-size: 3rem;
   margin-bottom: 0.5rem;
+}
+
+@media (max-width: 1024px) {
+  .resume-header h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .resume-header h1 {
+    font-size: 1.75rem;
+  }
 }
 
 .resume-header p {
@@ -93,6 +129,22 @@
   margin-bottom: 4rem;
 }
 
+@media (max-width: 1024px) {
+  .contact-info {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-info {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+
 .contact-card {
   background-color: #1c1c1c;
   border: 1px solid #2a2a2a;
@@ -123,6 +175,20 @@
   margin-bottom: 4rem;
 }
 
+@media (max-width: 1024px) {
+  .experience-section,
+  .education-section {
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience-section,
+  .education-section {
+    margin-bottom: 2rem;
+  }
+}
+
 .experience-section h2,
 .education-section h2 {
   font-size: 2rem;
@@ -131,9 +197,31 @@
   padding-bottom: 0.5rem;
 }
 
+@media (max-width: 1024px) {
+  .experience-section h2,
+  .education-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience-section h2,
+  .education-section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1.25rem;
+  }
+}
+
 .timeline {
   position: relative;
   padding-left: 2rem;
+}
+
+@media (max-width: 768px) {
+  .timeline {
+    padding-left: 1.5rem;
+  }
 }
 
 .timeline::before {
@@ -149,6 +237,12 @@
 .timeline-item {
   position: relative;
   margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .timeline-item {
+    margin-bottom: 1.5rem;
+  }
 }
 
 .timeline-item::before {
@@ -173,6 +267,12 @@
   position: relative;
 }
 
+@media (max-width: 768px) {
+  .timeline-content {
+    padding: 1.25rem;
+  }
+}
+
 .timeline-date {
   position: absolute;
   top: 1.5rem;
@@ -181,9 +281,23 @@
   font-size: 0.9rem;
 }
 
+@media (max-width: 768px) {
+  .timeline-date {
+    top: 1.25rem;
+    right: 1.25rem;
+    font-size: 0.8rem;
+  }
+}
+
 .timeline-content h3 {
   margin: 0 0 0.5rem 0;
   font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .timeline-content h3 {
+    font-size: 1rem;
+  }
 }
 
 .timeline-company {

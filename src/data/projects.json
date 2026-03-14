@@ -13,7 +13,7 @@
     {
       "id": 2,
       "name": "Riic Wedding Planner",
-      "description": "Collaborative task management tool with real-time updates and team collaboration features.",
+      "description": " Riic Wedding Planner is designed to strengthen the brand's presence in the wedding sector. The site includes a portfolio of past projects and dedicated features for clients to easily connect and share information.",
       "technologies": ["PHP", "MySQL", "Bootstrap", "WordPress","HTML/CSS"],
       "thumbnail": "src/assets/img/riicpj.png",
       "githubLink": null,

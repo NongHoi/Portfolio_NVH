@@ -1,6 +1,21 @@
+// eslint-disable-next-line no-unused-vars
+import { motion } from 'framer-motion';
 import './Skills.css';
 
 const Skills = () => {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: { staggerChildren: 0.1, delayChildren: 0.2 },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  };
+
   const skillsCategories = [
     {
       category: 'Frontend Development',
@@ -43,29 +58,56 @@ const Skills = () => {
   ];
 
   return (
-    <div className="skills-container">
-      <section className="skills-header">
+    <motion.div
+      className="skills-container"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.5 }}
+    >
+      <motion.section
+        className="skills-header"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
         <h1>Skills Expertise</h1>
         <p>A comprehensive overview of technical skills and professional expertise developed over years of development experience.</p>
-      </section>
+      </motion.section>
 
       {skillsCategories.map((categoryData, categoryIndex) => (
-        <section className="skills-category" key={categoryIndex}>
+        <motion.section
+          className="skills-category"
+          key={categoryIndex}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: categoryIndex * 0.1 }}
+        >
           <h2>{categoryData.category}</h2>
-          <div className="skills-grid">
+          <motion.div
+            className="skills-grid"
+            variants={containerVariants}
+            initial="hidden"
+            animate="visible"
+          >
             {categoryData.skills.map((skill, skillIndex) => (
-              <div className="skill-card" key={skillIndex}>
+              <motion.div
+                className="skill-card"
+                key={skillIndex}
+                variants={itemVariants}
+                whileHover={{ y: -8, boxShadow: "0 12px 24px rgba(170, 59, 255, 0.2)" }}
+              >
                 <h3>{skill.name}</h3>
                 <p className="skill-level">{skill.level}</p>
                 <div className="progress-bar-container">
                   <div className="progress-bar" style={{ width: `${skill.proficiency}%` }}></div>
                 </div>
-              </div>
+              </motion.div>
             ))}
-          </div>
-        </section>
+          </motion.div>
+        </motion.section>
       ))}
-    </div>
+    </motion.div>
   );
 };
 
