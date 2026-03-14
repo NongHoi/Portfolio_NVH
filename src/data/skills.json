@@ -1,0 +1,20 @@
+{
+  "technical": {
+    "languages": ["JavaScript", "C#", "Python", "SQL", "HTML/CSS"],
+    "frameworks": [
+      { "name": "React", "level": 95 },
+      { "name": "Next.js", "level": 90 },
+      { "name": "Node.js", "level": 85 },
+      { "name": "Express", "level": 85 },
+      { "name": "MongoDB", "level": 80 },
+      { "name": "PostgreSQL", "level": 80 },
+      { "name": "WordPress", "level": 95 },
+      { "name": "Bootstrap", "level": 90 },
+      { "name": "React Native", "level": 85 }
+     
+    ],
+    "tools": ["Git", "PostgreSQL", "MongoDB"]
+  },
+  "soft": ["Problem Solving", "Communication", "Team Collaboration", "Leadership", "Project Management"],
+  "languages": ["English", "Spanish", "French"]
+}

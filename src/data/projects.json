@@ -1,0 +1,44 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "Shoe Shop Website",
+      "description": " An e-commerce platform designed for small to medium-sized footwear businesses to manage inventory and optimize business processes..",
+      "technologies": ["C#", "SQL", "HTML/CSS", "JavaScript"],
+      "thumbnail": "src/assets/img/eco.jpg",
+      "githubLink": "https://github.com/NongHoi/ShoeShopWebsite.git",
+      "demoLink": null,
+      "tags": ["web", "fullstack"]
+    },
+    {
+      "id": 2,
+      "name": "Riic Wedding Planner",
+      "description": "Collaborative task management tool with real-time updates and team collaboration features.",
+      "technologies": ["PHP", "MySQL", "Bootstrap", "WordPress","HTML/CSS"],
+      "thumbnail": "src/assets/img/riicpj.png",
+      "githubLink": null,
+      "demoLink": "https://riicweddingplanner.com/",
+      "tags": ["web","fullstack", "WordPress"]
+    },
+    {
+      "id": 3,
+      "name": "StaffTime - Employee Time Tracking",
+      "description": "  A specialized management website for businesses with exible part-time staffing needs. It features dynamic timekeeping and precise payroll calculations to optimizework ow management.",
+      "technologies": ["JavaScript", "HTML/CSS", "React Native", "MongoDB"],
+      "thumbnail": "src/assets/img/stpj.jpg",
+      "githubLink": "https://github.com/NongHoi/StaffTime",
+      "demoLink": null,
+      "tags": ["web", "fullstack"]
+    },
+    {
+      "id": 4,
+      "name": "Hospital Mini Project",
+      "description": "Dashboard for tracking social media metrics with real-time data visualization.",
+      "technologies": ["JavaScript", "HTML/CSS", "MongoDB", "Express", "React", "Vite"],
+      "thumbnail": "src/assets/img/hptpj.jpg",
+      "githubLink": "https://github.com/NongHoi/Hospital_Mini_Project",
+      "demoLink": null,
+      "tags": ["web", "Backend"]
+    }
+  ]
+}
