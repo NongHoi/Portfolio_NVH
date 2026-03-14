@@ -70,7 +70,15 @@
   .search-input {
     max-width: 100%;
     font-size: 0.95rem;
-    padding: 0.65rem 0.85rem;
+    padding: 0.65rem 0.15rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .search-input {
+    max-width: 100%;
+    font-size: 0.85rem;
+    padding: 0.55rem 0.15rem;
   }
 }
 
@@ -85,6 +93,13 @@
   .filter-buttons {
     gap: 0.4rem;
     margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .filter-buttons {
+    gap: 0.3rem;
+    margin-bottom: 1rem;
   }
 }
 
@@ -105,6 +120,14 @@
   .filter-btn {
     padding: 0.4rem 0.8rem;
     font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .filter-btn {
+    padding: 0.35rem 0.65rem;
+    font-size: 0.75rem;
+    white-space: nowrap;
   }
 }
 

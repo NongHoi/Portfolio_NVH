@@ -38,7 +38,7 @@ const Skills = () => {
       ],
     },
     {
-      category: 'Tools & Technologies',
+      category: 'Tools Technologies',
       skills: [
         { name: 'Git', level: 'Expert', proficiency: 90 },
         { name: 'REST APIs', level: 'Expert', proficiency: 95 },
