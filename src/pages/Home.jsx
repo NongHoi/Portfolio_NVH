@@ -3,6 +3,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
+import nvhImage from '../assets/nvh.jpg';
 import './Home.css';
 
 const containerVariants = {
@@ -85,8 +86,8 @@ const Home = () => {
         </motion.div>
         
         <motion.div className="image-section" variants={itemVariants}>
-          {/* You can add an image or illustration here */}
-          <img src="./src/assets/nvh.jpg" alt="Portfolio illustration" style={{ width: '100%', borderRadius: '8px' }} />
+          {/* Portfolio illustration */}
+          <img src={nvhImage} alt="Portfolio illustration" style={{ width: '100%', borderRadius: '8px' }} />
         </motion.div>
       </motion.div>
     </motion.div>

@@ -2,7 +2,18 @@ import React from 'react';
 // eslint-disable-next-line no-unused-vars
 import { motion } from 'framer-motion';
 import { ExternalLink, Github } from 'lucide-react';
+import ecoImg from '../assets/img/eco.jpg';
+import riicImg from '../assets/img/riicpj.png';
+import stpjImg from '../assets/img/stpj.jpg';
+import hptpjImg from '../assets/img/hptpj.jpg';
 import './ProjectCard.css';
+
+const imageMap = {
+  'src/assets/img/eco.jpg': ecoImg,
+  'src/assets/img/riicpj.png': riicImg,
+  'src/assets/img/stpj.jpg': stpjImg,
+  'src/assets/img/hptpj.jpg': hptpjImg,
+};
 
 const ProjectCard = ({ project }) => {
   const itemVariants = {
@@ -14,10 +25,13 @@ const ProjectCard = ({ project }) => {
     },
   };
 
+  // Get the imported image or use placeholder
+  const thumbnailSrc = imageMap[project.thumbnail] || project.thumbnail || 'https://via.placeholder.com/400x250';
+
   return (
     <motion.div className="project-card" variants={itemVariants} whileHover={{ y: -5 }}>
       <div className="card-thumbnail">
-        <img src={project.thumbnail || 'https://via.placeholder.com/400x250'} alt={project.name} />
+        <img src={thumbnailSrc} alt={project.name} />
       </div>
       <div className="card-content">
         <div className="card-header">
