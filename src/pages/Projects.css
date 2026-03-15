@@ -74,8 +74,8 @@
   border: 1px solid #e5e4e7;
   border-radius: 0.5rem;
   font-size: 1rem;
-  background-color: #2a2a2a;
-  color: #fff;
+  background-color: #3a3a3a;
+  color: #000000;
 }
 
 @media (max-width: 768px) {
@@ -149,7 +149,7 @@
 
 .filter-btn.active {
   background-color: #000000;
-  color: #fff;
+  color: #ffffff;
   border-color: #08060d;
 }
 

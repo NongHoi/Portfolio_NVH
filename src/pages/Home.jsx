@@ -59,14 +59,14 @@ const Home = () => {
               className="main-heading"
               variants={itemVariants}
             >
-              NÔNG VAY HỘI
+              NÔNG VAY HỘI 
             </motion.h1>
 
             <motion.p
               className="sub-heading"
               variants={itemVariants}
             >
-              Full-Stack Developer
+              Software Engineering | Full-Stack Developer
             </motion.p>
 
             <motion.p
