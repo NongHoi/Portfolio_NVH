@@ -1,5 +1,6 @@
 import { Download, Mail } from 'lucide-react';
 import './Resume.css';
+import { color } from 'framer-motion';
 
 const Resume = () => {
   const contact = [
@@ -35,14 +36,13 @@ const Resume = () => {
   return (
     <div className="resume-container">
       <section className="resume-header fade-in-down">
-        <h1>Resume</h1>
+        <h1>Resume <style>{`.resume-header h1 { color: #000000; }`}</style></h1>
         <p>Comprehensive overview of my professional experience, education, and contact information.</p>
         <a href="src/assets/Cv/Nong-Vay-Hoi-Cv-Intern.pdf" download className="btn-download">
           <Download size={20} />
           Download PDF
         </a>
       </section>
-
       <section className="contact-info fade-in-up">
         {contact.map((item, index) => (
           <div className="contact-card slide-up" key={index} style={{ animationDelay: `${index * 0.1}s` }}>

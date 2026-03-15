@@ -71,7 +71,7 @@ const Skills = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h1>Skills Expertise</h1>
+        <h1>Skills Expertise <style>{`.skills-header h1 { color: #000000; }`}</style></h1>
         <p>A comprehensive overview of technical skills and professional expertise developed over years of development experience.</p>
       </motion.section>
 
