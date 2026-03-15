@@ -140,7 +140,7 @@
   border: 1px solid #e5e4e7;
   border-radius: 0.5rem;
   font-size: 1rem;
-  background-color: #2a2a2a;
+  background-color: #7a7a7a;
   color: #fff;
   transition: border-color 0.3s, box-shadow 0.3s;
 }
@@ -164,8 +164,8 @@
 .form-input:focus,
 .form-textarea:focus {
   outline: none;
-  border-color: #aa3bff;
-  box-shadow: 0 0 0 2px rgba(170, 59, 255, 0.2);
+  border-color: #862413;
+  box-shadow: 0 0 0 2px rgba(199, 29, 29, 0.2);
 }
 
 .form-textarea {
@@ -200,7 +200,8 @@
 }
 
 .submit-btn {
-  padding: 0.75rem 1.5rem;
+  margin-top: 10px;
+  padding: 0.95rem 1.5rem;
   border-radius: 0.5rem;
   font-weight: 500;
   cursor: pointer;
@@ -213,7 +214,7 @@
 
 @media (max-width: 768px) {
   .submit-btn {
-    padding: 0.65rem 1.25rem;
+    padding: 0.85rem 1.25rem;
     font-size: 0.95rem;
     width: 100%;
   }
@@ -235,7 +236,7 @@
 .submission-status {
   padding: 1rem;
   border-radius: 0.5rem;
-  margin-top: 1rem;
+  margin-top: 3rem;
   text-align: center;
 }
 
@@ -317,6 +318,6 @@
 }
 
 .social-link-item a:hover {
-  color: #aa3bff;
-  background-color: rgba(170, 59, 255, 0.1);
+  color: #882d2a;
+  background-color: rgba(138, 59, 39, 0.1);
 }
