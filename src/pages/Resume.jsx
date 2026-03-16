@@ -1,6 +1,5 @@
 import { Download, Mail } from 'lucide-react';
 import './Resume.css';
-import { color } from 'framer-motion';
 
 const Resume = () => {
   const contact = [
